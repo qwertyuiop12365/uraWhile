@@ -52,3 +52,31 @@
    
 //}
 //Console.WriteLine($"сумма:{s}");
+
+
+
+
+//for(int i =35;  i<=87;  i++)
+//{
+//    if(i%7==1||i%7==2||i%7==5) Console.WriteLine(i);
+//}
+
+//try
+//{
+//    int n = 0;
+//    do
+//    {
+//        Console.Write("Введите n:");
+//        n = int.Parse(Console.ReadLine());
+//        if (n < 0) Console.WriteLine("Введите положительное число");
+//    }
+//    while (n < 0);
+//    long F = 1;
+//    for (int i = 1; i <= n; i++) F *= i;
+//    Console.WriteLine($"Факториал:{F}");
+//}
+
+//catch(Exception e)
+//{
+//    Console.WriteLine(e.Message);
+//}
