@@ -1,0 +1,21 @@
+//вариант 8 высокий уровень
+int K = 0;
+double S = 1;
+Console.Write("Введите числа:");
+do
+{
+    try
+    {
+        int n = int.Parse(Console.ReadLine());
+        if (n < 0) break;
+
+        S *= n;
+        K++;
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e.Message);
+    }
+}
+while (true);
+Console.WriteLine($"Произведение чисел: {S}");
