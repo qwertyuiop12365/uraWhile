@@ -14,9 +14,10 @@ try
         }
         P *= (((j - Math.Pow(j, 2)) * k )/ ((j - 4)) * s);
     }
-    Console.WriteLine($"s={P:F2}");
+    Console.WriteLine($"P={P:F2}");
 }
 catch (Exception e)
 {
     Console.WriteLine(e.Message);
 }
+//при любых k>=0 произведение всегда будет равно 0. При k = -1, P = -0.29
