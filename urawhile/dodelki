@@ -1,0 +1,22 @@
+try
+{
+    Console.Write("Введите k:");
+    int k = int.Parse(Console.ReadLine());
+    double P = 1;
+    for (int j = -1; j <= k; j++)
+    {
+        if (j == 4 || j == 0) continue;
+        double s = 0;
+        for (int i = j; i <= k + 2; i++)
+        {
+            if (i == 7 ||i == 5) continue;
+            s += Math.Pow(Math.Abs(i - 5), 1 / 3.0) / Math.Abs(i - 7);
+        }
+        P *= (((j - Math.Pow(j, 2)) * k )/ ((j - 4)) * s);
+    }
+    Console.WriteLine($"s={P:F2}");
+}
+catch (Exception e)
+{
+    Console.WriteLine(e.Message);
+}
